@@ -1,9 +1,9 @@
 import test from 'ava';
-import m from './';
+import yearDays from '.';
 
-test(t => {
-	t.is(typeof m(), 'number');
-	t.is(m(2014), 365);
-	t.is(m(2016), 366);
-	t.is(m(new Date(2016, 0)), 366);
+test('main', t => {
+	t.is(typeof yearDays(), 'number');
+	t.is(yearDays(2014), 365);
+	t.is(yearDays(2016), 366);
+	t.is(yearDays(new Date(2016, 0)), 366);
 });
