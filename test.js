@@ -1,5 +1,5 @@
 import test from 'ava';
-import yearDays from '.';
+import yearDays from './index.js';
 
 test('main', t => {
 	t.is(typeof yearDays(), 'number');

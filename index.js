@@ -1,4 +1,5 @@
-'use strict';
-const leapYear = require('leap-year');
+import leapYear from 'leap-year';
 
-module.exports = yearOrDate => leapYear(yearOrDate) ? 366 : 365;
+export default function yearDays(yearOrDate) {
+	return leapYear(yearOrDate) ? 366 : 365;
+}
